@@ -1,0 +1,100 @@
+.footer{
+    padding-top: 120px;
+    background-color: $main-background-color;
+    &__wrapper{
+        background-color: white;
+    }
+    &__contacts{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 132px;
+        min-width: 1304px;
+    }
+    &__socials{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        
+    }
+    &__message{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 23px;
+        a{
+            color: black;
+        }
+    }
+    &__countries{
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(2,637px);
+        grid-template-rows: repeat(4,minmax(62px, auto));
+        column-gap: 30px;
+        row-gap: 15px;
+        
+    }
+    &__list{
+        display: none;
+        padding: 0 15px 5px 18px;
+        background-color: white;
+        
+        ul{
+            list-style-type: none;
+            
+        }
+        li{
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &.active{
+            display: block;
+        }
+    }
+    &__option{
+        padding: 25px 15px 27px 18px;
+        border-radius: 4px;
+        background-color:white;
+        display: flex;
+        align-items: center;
+        position: relative;
+        ul{
+            position: absolute;
+            min-width: 160px;
+        }
+        img{
+            padding-right: 12px;
+        }
+        span{
+            position: absolute;
+            right: 20px;
+            width: 10px;
+            height: 10px;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+            transform: rotate(45deg);
+            cursor: pointer;
+            transition: 0.3s all;
+            &.active{
+                transform: rotate(-135deg);
+            }
+        }
+        
+    }
+    &__policy{
+        padding-top: 35px;
+        padding-bottom: 38px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: $policy-color;
+        }
+    }
+}

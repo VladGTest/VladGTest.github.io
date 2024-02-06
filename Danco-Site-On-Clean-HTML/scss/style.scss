@@ -1,0 +1,62 @@
+
+
+
+
+
+@import 'base/healper';
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/typography';
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+a{
+    color: $dark-grey-color;
+}
+
+
+
+@import 'blocks/button';
+@import 'blocks/header';
+@import 'blocks/careers';
+@import 'blocks/about';
+@import 'blocks/projects';
+@import 'blocks/roof-types';
+@import 'blocks/roofing-services';
+@import 'blocks/footer';
+@import 'blocks/hero';
+@import 'blocks/sales';
+@import 'blocks/team';
+@import 'blocks/quote';
+@import 'blocks/safety-and-stats';
+@import 'blocks/join-the-team';
+@import 'blocks/map';
+@import 'blocks/contact-us';
+@import 'blocks/careers-info';
+@import 'blocks/job-openings';
+@import 'blocks/projects-header';
+@import 'blocks/projects-list';
+@import 'blocks/all-the-modules-header';
+@import 'blocks/project-view';
+@import 'blocks/additional-info';
+@import 'blocks/projects-list-mini';
+@import 'blocks/projects-notation';
+@import 'blocks/project-preview';
+@import 'blocks/tpo-this';
+@import 'blocks/media';

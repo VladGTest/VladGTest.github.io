@@ -1,0 +1,112 @@
+.start{
+    padding-top: 120px;
+    background-color: $main-background-color;
+    &__wrapper{
+        background: url('../img/Gradient-Background-Big.png') center center/cover no-repeat;
+        min-height: 395px;
+        color: white;
+        gap: 460px;
+        display: flex;
+        padding: 56px 0px 60px 60px;
+        
+    }
+    &__elements{
+        position: relative;
+        z-index: 1;
+    }
+    &__element{
+        &-1{
+            position: absolute;
+            top: -118px;
+            right: -165px;
+            z-index: 1;
+        }
+        &-2{
+            position: absolute;
+            left: -175px;
+            bottom: -64px;
+        }
+        &-3{
+            position: absolute;
+            left: 31px;
+            bottom: 8px;
+            z-index: 2;
+        }
+        &-4{
+            position: absolute;
+            left: 41px;
+            top: -56px;
+        }
+        &-5{
+            position: absolute;
+            left: -675px;
+            bottom: -65px;
+        }
+        &-6{
+            position: absolute;
+            right: 420px;
+            top: 194px;
+        }
+        &-7{
+            position: absolute;
+            right: 394px;
+            top: 211px;
+        }
+        &-8{
+            position: absolute;
+            right: -5px;
+            top: -4px;
+            z-index: 0;
+        }
+        &-9{
+            position: absolute;
+            right: 180px;
+            top: 41px;
+        }
+        &-10{
+            position: absolute;
+            right: 455px;
+            top: -56px;
+        }
+        &-11{
+            position: absolute;
+            left: 200px;
+        }
+        &-12{
+            position: absolute;
+            right: 229px;
+            top: -52px;
+        }
+        &-13{
+            position: absolute;
+            right: 25px;
+            bottom: 91px;
+            z-index: 0;
+        }
+        &-14{
+            position: absolute;
+            left: 226px;
+            top: 312px;
+        }
+    }
+    &__descr{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p{
+            width: 484px;
+            line-height: 27px;
+        }
+    }
+    &__subtitle{
+        line-height: 25px;
+    }
+    &__title{
+        line-height: 55px;
+    }
+    &__btn{
+        background-color: $dark-green-color;
+        @include button-animate(white, $dark-green-color);
+    }
+
+}

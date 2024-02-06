@@ -1,0 +1,131 @@
+.services{
+    padding-top: 110px;
+    background-color: $main-background-color;
+    &__title{
+        text-align: center;
+    }
+    &__wrapper{
+        margin-top: 46px;
+        display: grid;
+        grid-template-rows: repeat(2,minmax(581px, auto));
+        grid-template-columns: repeat(2, minmax(540px, 637px));
+        gap: 30px;
+
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        padding: 60px 60px;
+        border-radius: 4px;
+        &-subtitle{
+            width: 518px;
+            
+        }
+        
+        &-list{
+            background-color: $main-background-color;
+            padding: 19px 29px 20px 57px;
+            list-style-type: none;
+            li{
+                line-height: 31.5px;
+                color: $dark-green-color;
+                position: relative;
+                @include before_romb;
+                &:before{
+                    content: '';
+                    left: -19px;
+                    top: 11px;
+                    background-color: $dark-green-color;
+                }
+                
+                
+            }
+        }
+        
+    }
+
+    &__details{
+        margin-top: 30px;
+        display: flex;
+        padding: 53px 111px 60px 59px;
+        color: white;
+        min-height: 520px;
+        position: relative;
+        background-color: $dark-green-color;
+        &-img{
+            position: absolute;
+            bottom: -5px;
+            right: 90px;
+        }
+        &-descr{
+            width: 447px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            line-height: 27px;
+        }
+        &-title{
+            line-height: 40px;
+        }
+        &-subtitle{
+            position: relative;
+            padding-left: 19px;
+            line-height: 27px;
+            @include before_romb;
+            &:before{
+                content: '';
+                left: 1px;
+                background-color: white;
+            }
+            font-weight: 800;
+            
+        }
+        
+    }
+    &__school{
+        margin-top: 30px;
+        display: flex;
+        min-height: 256px;
+        background:url('../img/Gradient-Background.png');
+        padding: 50px 59px 61px 60px;
+        position: relative;
+        background-size: cover;
+        &-descr{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &-img{
+            position: absolute;
+            right: 0;
+            top: -11px;
+            img{
+                width: 100%;
+            }
+        }
+        &-title{
+            color: white;
+            line-height: 40px;
+        }
+        &-course{
+            display: inline-block;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 4px;
+            padding: 18px 120px 20px 57px;
+            line-height: 31.5px;
+            position: relative;
+            color: $dark-green-color;
+            @include before_romb;
+            &:before{
+                content: '';
+                background-color: $dark-green-color;
+                left: 30px;
+                top: 30px;
+                
+            }
+        }
+    }
+}

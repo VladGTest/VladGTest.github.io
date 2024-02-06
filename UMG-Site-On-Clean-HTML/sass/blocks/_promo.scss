@@ -1,0 +1,47 @@
+.promo{
+    padding-top: 125px;
+    background-color: $dark-blue-color;
+    height: 675px;
+   
+    &__wrapper{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descr{
+        width: 480px;
+    }
+    &__links{
+        line-height: 31.5px; /* 31.5px */
+        color: #80929A;
+        a:not(a:last-child){
+          
+            position: relative;
+            @include after_romb;
+            
+        }
+    }
+    &__link{
+        padding-right: 20px;
+        color: #80929A;
+        &-selected{
+            color: white;
+            padding-right: 20px;
+        }
+    }
+    &__title{
+        color:white;
+        margin-top: 53px;
+        line-height: 55px;
+    }
+    p{
+        width: 445px;
+        margin-top: 19px;
+        line-height: 31.5px; 
+        color:white;
+    }
+    &__btn{
+        position: relative;
+        margin-top: 35px;
+    }
+}
